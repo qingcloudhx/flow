@@ -3,17 +3,17 @@ package definition
 import (
 	"errors"
 	"fmt"
-	"github.com/project-flogo/core/data/coerce"
+	"github.com/qingcloudhx/core/data/coerce"
 	"strconv"
 
-	"github.com/project-flogo/core/activity"
-	"github.com/project-flogo/core/data/expression"
-	"github.com/project-flogo/core/data/mapper"
-	"github.com/project-flogo/core/data/metadata"
-	"github.com/project-flogo/core/data/schema"
-	"github.com/project-flogo/core/support"
-	"github.com/project-flogo/core/support/log"
-	flowutil "github.com/project-flogo/flow/util"
+	"github.com/qingcloudhx/core/activity"
+	"github.com/qingcloudhx/core/data/expression"
+	"github.com/qingcloudhx/core/data/mapper"
+	"github.com/qingcloudhx/core/data/metadata"
+	"github.com/qingcloudhx/core/data/schema"
+	"github.com/qingcloudhx/core/support"
+	"github.com/qingcloudhx/core/support/log"
+	flowutil "github.com/qingcloudhx/flow/util"
 )
 
 // DefinitionRep is a serializable representation of a flow Definition

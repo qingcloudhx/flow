@@ -1,6 +1,6 @@
 package support
 
-import "github.com/project-flogo/core/data"
+import "github.com/qingcloudhx/core/data"
 
 // Interceptor contains a set of task interceptor, this can be used to override
 // runtime data of an instance of the corresponding Flow.  This can be used to

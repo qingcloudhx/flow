@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/project-flogo/core/app/resource"
-	"github.com/project-flogo/flow/definition"
+	"github.com/qingcloudhx/core/app/resource"
+	"github.com/qingcloudhx/flow/definition"
 )
 
 const (

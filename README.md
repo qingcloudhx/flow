@@ -17,4 +17,4 @@
 
 
 ## License 
-Flogo source code in [this](https://github.com/project-flogo/strem) repository is under a BSD-style license, refer to [LICENSE](https://github.com/project-flogo/strem/blob/master/LICENSE)
+Flogo source code in [this](https://github.com/qingcloudhx/strem) repository is under a BSD-style license, refer to [LICENSE](https://github.com/qingcloudhx/strem/blob/master/LICENSE)

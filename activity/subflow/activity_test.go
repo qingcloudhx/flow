@@ -2,16 +2,16 @@ package subflow
 
 import (
 	"context"
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/core/engine/runner"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/core/engine/runner"
 	"testing"
 
-	"github.com/project-flogo/core/action"
-	"github.com/project-flogo/core/activity"
-	"github.com/project-flogo/core/app/resource"
-	"github.com/project-flogo/core/support/test"
-	"github.com/project-flogo/flow"
-	"github.com/project-flogo/flow/support"
+	"github.com/qingcloudhx/core/action"
+	"github.com/qingcloudhx/core/activity"
+	"github.com/qingcloudhx/core/app/resource"
+	"github.com/qingcloudhx/core/support/test"
+	"github.com/qingcloudhx/flow"
+	"github.com/qingcloudhx/flow/support"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -23,7 +23,7 @@ var jsonFlowRes1 = `{
     {
       "id": "runFlow",
       "activity": {
-        "ref": "github.com/project-flogo/flow/activity/subflow",
+        "ref": "github.com/qingcloudhx/flow/activity/subflow",
         "settings": {
           "flowURI": "res://flow/flow2"
         },
@@ -74,7 +74,7 @@ var jsonFlow1 = `{
     {
       "id": "runFlow",
       "activity": {
-        "ref": "github.com/project-flogo/flow/activity/subflow",
+        "ref": "github.com/qingcloudhx/flow/activity/subflow",
         "settings": {
           "flowURI": "res://flow:flow2"
         },
@@ -127,7 +127,7 @@ func TestRegister(t *testing.T) {
 
 func TestSettings(t *testing.T) {
 
-	f := action.GetFactory("github.com/project-flogo/flow")
+	f := action.GetFactory("github.com/qingcloudhx/flow")
 	af := f.(*flow.ActionFactory)
 
 	err := initActionFactory(af)
@@ -155,7 +155,7 @@ func TestSettings(t *testing.T) {
 
 func TestDynamicIO(t *testing.T) {
 
-	f := action.GetFactory("github.com/project-flogo/flow")
+	f := action.GetFactory("github.com/qingcloudhx/flow")
 	af := f.(*flow.ActionFactory)
 
 	err := initActionFactory(af)
@@ -180,7 +180,7 @@ func TestDynamicIO(t *testing.T) {
 
 func TestSubFlow(t *testing.T) {
 
-	f := action.GetFactory("github.com/project-flogo/flow")
+	f := action.GetFactory("github.com/qingcloudhx/flow")
 	af := f.(*flow.ActionFactory)
 
 	err := initActionFactory(af)

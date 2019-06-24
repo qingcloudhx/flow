@@ -1,7 +1,7 @@
 package instance
 
 import (
-	"github.com/project-flogo/flow/support"
+	"github.com/qingcloudhx/flow/support"
 )
 
 const (

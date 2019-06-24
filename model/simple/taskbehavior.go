@@ -1,9 +1,9 @@
 package simple
 
 import (
-	"github.com/project-flogo/core/activity"
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/model"
+	"github.com/qingcloudhx/core/activity"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/model"
 )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

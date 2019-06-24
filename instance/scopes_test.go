@@ -3,9 +3,9 @@ package instance
 import (
 	"testing"
 
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/core/data/resolve"
-	"github.com/project-flogo/flow/definition"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/core/data/resolve"
+	"github.com/qingcloudhx/flow/definition"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/project-flogo/core/support/log"
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/model"
-	_ "github.com/project-flogo/flow/support/test"
+	"github.com/qingcloudhx/core/support/log"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/model"
+	_ "github.com/qingcloudhx/flow/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

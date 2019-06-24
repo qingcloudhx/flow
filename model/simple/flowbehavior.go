@@ -1,8 +1,8 @@
 package simple
 
 import (
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/model"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/model"
 )
 
 // FlowBehavior implements model.FlowBehavior

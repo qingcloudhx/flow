@@ -3,12 +3,12 @@ package instance
 import (
 	"strconv"
 
-	"github.com/project-flogo/core/action"
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/core/data/metadata"
-	"github.com/project-flogo/core/support/log"
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/model"
+	"github.com/qingcloudhx/core/action"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/core/data/metadata"
+	"github.com/qingcloudhx/core/support/log"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/model"
 )
 
 type Instance struct {

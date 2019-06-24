@@ -1,8 +1,8 @@
 package test
 
 import (
-	"github.com/project-flogo/flow/model"
-	"github.com/project-flogo/flow/model/simple"
+	"github.com/qingcloudhx/flow/model"
+	"github.com/qingcloudhx/flow/model/simple"
 )
 
 func init() {

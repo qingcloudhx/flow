@@ -1,8 +1,8 @@
 package instance
 
 import (
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/model"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/model"
 )
 
 // LinkInst represents data associated with an instance of a Link

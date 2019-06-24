@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/project-flogo/core/support"
-	"github.com/project-flogo/core/support/log"
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/model"
-	flowsupport "github.com/project-flogo/flow/support"
+	"github.com/qingcloudhx/core/support"
+	"github.com/qingcloudhx/core/support/log"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/model"
+	flowsupport "github.com/qingcloudhx/flow/support"
 )
 
 type IndependentInstance struct {

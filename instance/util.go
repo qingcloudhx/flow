@@ -3,11 +3,11 @@ package instance
 import (
 	"errors"
 
-	"github.com/project-flogo/core/activity"
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/core/data/coerce"
-	"github.com/project-flogo/core/data/metadata"
-	"github.com/project-flogo/flow/support"
+	"github.com/qingcloudhx/core/activity"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/core/data/coerce"
+	"github.com/qingcloudhx/core/data/metadata"
+	"github.com/qingcloudhx/flow/support"
 )
 
 func applySettingsMapper(taskInst *TaskInst) error {

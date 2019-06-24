@@ -3,15 +3,15 @@ package tester
 import (
 	"context"
 
-	"github.com/project-flogo/core/action"
-	"github.com/project-flogo/core/engine/runner"
-	"github.com/project-flogo/core/support/log"
-	"github.com/project-flogo/flow/instance"
-	"github.com/project-flogo/flow/support"
+	"github.com/qingcloudhx/core/action"
+	"github.com/qingcloudhx/core/engine/runner"
+	"github.com/qingcloudhx/core/support/log"
+	"github.com/qingcloudhx/flow/instance"
+	"github.com/qingcloudhx/flow/support"
 )
 
 const (
-	RefFlow = "github.com/project-flogo/flow"
+	RefFlow = "github.com/qingcloudhx/flow"
 )
 
 // RequestProcessor processes request objects and invokes the corresponding

@@ -11,9 +11,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/project-flogo/core/support"
-	"github.com/project-flogo/core/support/log"
-	"github.com/project-flogo/flow/definition"
+	"github.com/qingcloudhx/core/support"
+	"github.com/qingcloudhx/core/support/log"
+	"github.com/qingcloudhx/flow/definition"
 )
 
 const (

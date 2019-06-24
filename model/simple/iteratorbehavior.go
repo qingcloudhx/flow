@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/project-flogo/core/data/coerce"
-	"github.com/project-flogo/flow/model"
+	"github.com/qingcloudhx/core/data/coerce"
+	"github.com/qingcloudhx/flow/model"
 )
 
 // SimpleIteratorTask implements model.TaskBehavior

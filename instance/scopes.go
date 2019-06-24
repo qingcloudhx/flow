@@ -3,7 +3,7 @@ package instance
 import (
 	"strings"
 
-	"github.com/project-flogo/core/data"
+	"github.com/qingcloudhx/core/data"
 )
 
 type WorkingDataScope struct {

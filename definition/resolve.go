@@ -2,10 +2,10 @@ package definition
 
 import (
 	"fmt"
-	"github.com/project-flogo/core/data/path"
+	"github.com/qingcloudhx/core/data/path"
 
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/core/data/resolve"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/core/data/resolve"
 )
 
 var defResolver = resolve.NewCompositeResolver(map[string]resolve.Resolver{

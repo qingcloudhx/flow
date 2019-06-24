@@ -4,13 +4,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/project-flogo/core/data/expression"
-	"github.com/project-flogo/core/support"
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/instance"
-	"github.com/project-flogo/flow/model"
-	"github.com/project-flogo/flow/model/simple"
-	flowsupport "github.com/project-flogo/flow/support"
+	"github.com/qingcloudhx/core/data/expression"
+	"github.com/qingcloudhx/core/support"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/instance"
+	"github.com/qingcloudhx/flow/model"
+	"github.com/qingcloudhx/flow/model/simple"
+	flowsupport "github.com/qingcloudhx/flow/support"
 )
 
 const (

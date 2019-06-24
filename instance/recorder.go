@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/project-flogo/core/support"
-	"github.com/project-flogo/core/support/log"
-	"github.com/project-flogo/flow/service"
+	"github.com/qingcloudhx/core/support"
+	"github.com/qingcloudhx/core/support/log"
+	"github.com/qingcloudhx/flow/service"
 )
 
 // StateRecorder is the interface that describes a service that can record

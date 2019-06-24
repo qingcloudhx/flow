@@ -1,8 +1,8 @@
 package support
 
 import (
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/core/data/mapper"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/core/data/mapper"
 )
 
 // Patch contains a set of task patches for a Flow Patch, this

@@ -5,22 +5,22 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/project-flogo/core/action"
-	"github.com/project-flogo/core/app/resource"
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/core/engine/runner"
-	"github.com/project-flogo/core/support/test"
-	"github.com/project-flogo/flow/instance"
-	"github.com/project-flogo/flow/support"
-	"github.com/project-flogo/flow/tester"
+	"github.com/qingcloudhx/core/action"
+	"github.com/qingcloudhx/core/app/resource"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/core/engine/runner"
+	"github.com/qingcloudhx/core/support/test"
+	"github.com/qingcloudhx/flow/instance"
+	"github.com/qingcloudhx/flow/support"
+	"github.com/qingcloudhx/flow/tester"
 	"github.com/stretchr/testify/assert"
 )
 
-const FlowRef = "github.com/project-flogo/flow"
+const FlowRef = "github.com/qingcloudhx/flow"
 
 var testFlowActionCfg = `{
  "id": "flow",
- "ref": "github.com/project-flogo/flow",
+ "ref": "github.com/qingcloudhx/flow",
  "metadata": {
    "input": [],
    "output": []
@@ -42,7 +42,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/project-flogo/contrib/activity/log",
+         "activityRef": "github.com/qingcloudhx/contrib/activity/log",
          "attributes": [
            {
              "name": "message",
@@ -70,7 +70,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/project-flogo/contrib/activity/log",
+         "activityRef": "github.com/qingcloudhx/contrib/activity/log",
          "attributes": [
            {
              "name": "message",

@@ -11,7 +11,7 @@ This activity allows you to start a subflow.
 This activity comes out of the box with the Flogo Web UI
 ### Flogo CLI
 ```bash
-flogo install github.com/project-flogo/flow/activity/subflow
+flogo install github.com/qingcloudhx/flow/activity/subflow
 ```
 
 ## Metadata
@@ -40,7 +40,7 @@ The below example executes "mysubflow" and set its input values to literals "foo
 {
   "id": "RunSubFlow",
   "activity": {
-    "ref": "github.com/project-flogo/flow/activity/subflow",
+    "ref": "github.com/qingcloudhx/flow/activity/subflow",
     "settings" : {
       "flowURI" : "res://flow:mysubflow"
     },

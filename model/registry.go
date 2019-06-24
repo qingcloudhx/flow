@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/project-flogo/flow/util"
+	"github.com/qingcloudhx/flow/util"
 )
 
 var (

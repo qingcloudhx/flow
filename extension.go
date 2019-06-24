@@ -1,13 +1,13 @@
 package flow
 
 import (
-	"github.com/project-flogo/core/data/expression"
-	"github.com/project-flogo/flow/definition"
-	"github.com/project-flogo/flow/instance"
-	"github.com/project-flogo/flow/model"
-	"github.com/project-flogo/flow/model/simple"
-	"github.com/project-flogo/flow/support"
-	"github.com/project-flogo/flow/tester"
+	"github.com/qingcloudhx/core/data/expression"
+	"github.com/qingcloudhx/flow/definition"
+	"github.com/qingcloudhx/flow/instance"
+	"github.com/qingcloudhx/flow/model"
+	"github.com/qingcloudhx/flow/model/simple"
+	"github.com/qingcloudhx/flow/support"
+	"github.com/qingcloudhx/flow/tester"
 )
 
 // Provides the different extension points to the FlowBehavior Action

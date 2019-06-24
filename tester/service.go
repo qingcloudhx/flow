@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/project-flogo/core/support"
-	"github.com/project-flogo/core/support/log"
-	"github.com/project-flogo/flow/instance"
-	"github.com/project-flogo/flow/service"
+	"github.com/qingcloudhx/core/support"
+	"github.com/qingcloudhx/core/support/log"
+	"github.com/qingcloudhx/flow/instance"
+	"github.com/qingcloudhx/flow/service"
 )
 
 // RestEngineTester is default REST implementation of the EngineTester

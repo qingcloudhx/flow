@@ -1,7 +1,7 @@
 package simple
 
 import (
-	"github.com/project-flogo/flow/model"
+	"github.com/qingcloudhx/flow/model"
 )
 
 const (

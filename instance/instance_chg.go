@@ -1,8 +1,8 @@
 package instance
 
 import (
-	"github.com/project-flogo/core/data"
-	"github.com/project-flogo/flow/model"
+	"github.com/qingcloudhx/core/data"
+	"github.com/qingcloudhx/flow/model"
 )
 
 // ChgType denotes the type of change for an object in an instance

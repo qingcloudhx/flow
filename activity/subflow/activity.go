@@ -1,14 +1,14 @@
 package subflow
 
 import (
-	"github.com/project-flogo/core/support/log"
+	"github.com/qingcloudhx/core/support/log"
 	"net/url"
 	"sync"
 	"sync/atomic"
 
-	"github.com/project-flogo/core/activity"
-	"github.com/project-flogo/core/data/metadata"
-	"github.com/project-flogo/flow/instance"
+	"github.com/qingcloudhx/core/activity"
+	"github.com/qingcloudhx/core/data/metadata"
+	"github.com/qingcloudhx/flow/instance"
 )
 
 func init() {

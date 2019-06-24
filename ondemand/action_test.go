@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/project-flogo/core/action"
-	"github.com/project-flogo/core/app/resource"
-	_ "github.com/project-flogo/core/support/test"
+	"github.com/qingcloudhx/core/action"
+	"github.com/qingcloudhx/core/app/resource"
+	_ "github.com/qingcloudhx/core/support/test"
 
-	"github.com/project-flogo/core/engine/runner"
+	"github.com/qingcloudhx/core/engine/runner"
 	"github.com/stretchr/testify/assert"
 )
 

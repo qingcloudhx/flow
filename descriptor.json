@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "title": "Simple Flow",
   "description": "Simple Flow Action",
-  "homepage": "https://github.com/project-flogo/flow",
+  "homepage": "https://github.com/qingcloudhx/flow",
   "async": true,
   "passthru":true,
   "settings":[

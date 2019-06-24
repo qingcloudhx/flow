@@ -3,9 +3,9 @@ package instance
 import (
 	"time"
 
-	coreevent "github.com/project-flogo/core/engine/event"
-	"github.com/project-flogo/flow/model"
-	"github.com/project-flogo/flow/support/event"
+	coreevent "github.com/qingcloudhx/core/engine/event"
+	"github.com/qingcloudhx/flow/model"
+	"github.com/qingcloudhx/flow/support/event"
 )
 
 type taskEvent struct {
