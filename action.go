@@ -54,6 +54,7 @@ func (f *ActionFactory) Initialize(ctx action.InitContext) error {
 	f.resManager = ctx.ResourceManager()
 	logger = log.ChildLogger(log.RootLogger(), "flow")
 
+	logger.Infof("[flow] ActionFactory Initialize......")
 	if flowManager != nil {
 		return nil
 	}
@@ -75,9 +76,9 @@ func (f *ActionFactory) Initialize(ctx action.InitContext) error {
 		}
 	}
 
+	//todo data model
 	exprFactory := expression.NewFactory(definition.GetDataResolver())
 	mapperFactory := mapper.NewFactory(definition.GetDataResolver())
-
 	definition.SetMapperFactory(mapperFactory)
 	definition.SetExprFactory(exprFactory)
 
@@ -85,10 +86,11 @@ func (f *ActionFactory) Initialize(ctx action.InitContext) error {
 		idGenerator, _ = support.NewGenerator()
 	}
 
+	//todo flow model create
 	model.RegisterDefault(ep.GetDefaultFlowModel())
 	flowManager = flowSupport.NewFlowManager(ep.GetFlowProvider())
 	flowSupport.InitDefaultDefLookup(flowManager, ctx.ResourceManager())
-
+	logger.Infof("[flow] ActionFactory Initialize finished......")
 	return nil
 }
 
@@ -102,7 +104,7 @@ func recordFlows() bool {
 }
 
 func (f *ActionFactory) New(config *action.Config) (action.Action, error) {
-
+	logger = log.ChildLogger(log.RootLogger(), "flow")
 	flowAction := &FlowAction{}
 
 	settings := &Settings{}
@@ -112,7 +114,7 @@ func (f *ActionFactory) New(config *action.Config) (action.Action, error) {
 	}
 
 	flowAction.flowURI = settings.FlowURI
-
+	logger.Infof("[flow] ActionFactory New(%s)", settings.FlowURI)
 	def, res, err := flowSupport.GetDefinition(flowAction.flowURI)
 	if err != nil {
 		return nil, err

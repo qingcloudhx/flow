@@ -42,7 +42,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/qingcloudhx/contrib/activity/log",
+         "activityRef": "github.com/qingcloudhx/flow-plugin/activity/log",
          "attributes": [
            {
              "name": "message",
@@ -70,7 +70,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/qingcloudhx/contrib/activity/log",
+         "activityRef": "github.com/qingcloudhx/flow-plugin/activity/log",
          "attributes": [
            {
              "name": "message",
@@ -163,20 +163,66 @@ var testRestartInitialState = `{
 }
 `
 
+var testActionJson = `
+{           
+			"id":"hexing",
+			"ref": "#flow",
+            "settings": {
+              "flowURI": "res://flow:test_3"
+            }
+}
+`
+var jsonFlowRes2 = `{
+  "metadata": {
+    "input": [
+      {
+        "name": "in",
+        "type": "string"
+      }
+    ],
+    "output": [
+      {
+        "name": "value",
+        "type": "string"
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "log",
+      "activity": {
+        "ref": "testlog",
+        "input": {
+			"message":"=$flow.in"
+        }
+      }
+    }
+  ]
+}`
+
 func TestFlowAction_Run_Restart(t *testing.T) {
 
 	cfg := &action.Config{}
-	err := json.Unmarshal([]byte(testFlowActionCfg), cfg)
+	err := json.Unmarshal([]byte(testActionJson), cfg)
 	if err != nil {
 		t.Error(err)
 		return
 	}
+	actionCtx := test.NewActionInitCtx()
 
-	ff := ActionFactory{}
-	err = ff.Initialize(test.NewActionInitCtx())
+	f := action.GetFactory(FlowRef)
+	af := f.(*ActionFactory)
+	err = af.Initialize(actionCtx)
 	assert.Nil(t, err)
 
-	flowAction, err := ff.New(cfg)
+	//loader := resource.GetLoader("flow")
+	rConfig1 := &resource.Config{ID: "flow:test_3", Data: []byte(jsonFlowRes2)}
+	err = actionCtx.AddResource(support.ResTypeFlow, rConfig1)
+	assert.Nil(t, err)
+
+	//_, err = loader.LoadResource(rConfig1)
+
+	flowAction, err := af.New(cfg)
 	assert.NotNil(t, err)
 
 	req := &RestartRequest{}

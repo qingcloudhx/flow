@@ -57,7 +57,8 @@ func NewIndependentInstance(instanceID string, flowURI string, flow *definition.
 }
 
 func (inst *IndependentInstance) newEmbeddedInstance(taskInst *TaskInst, flowURI string, flow *definition.Definition) *Instance {
-
+	loggger := inst.logger
+	loggger.Infof("[flow] newEmbeddedInstance subFlowCtr:%d,flowURI:%s", inst.subFlowCtr, flowURI)
 	inst.subFlowCtr++
 
 	embeddedInst := &Instance{}
@@ -464,17 +465,16 @@ func (inst *IndependentInstance) startInstance(toStart *Instance) bool {
 	//need input mappings
 
 	flowBehavior := inst.flowModel.GetFlowBehavior()
-	ok, taskEntries := flowBehavior.Start(toStart)
-
-	if ok {
+	if ok, taskEntries := flowBehavior.Start(toStart); ok {
 		err := inst.enterTasks(toStart, taskEntries)
 		if err != nil {
 			//todo review how we should handle an error encountered here
 			log.RootLogger().Errorf("encountered error when entering tasks: %v", err)
 		}
+		return true
+	} else {
+		return false
 	}
-
-	return ok
 }
 
 func (inst *IndependentInstance) enterTasks(activeInst *Instance, taskEntries []*model.TaskEntry) error {

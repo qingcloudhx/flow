@@ -1,7 +1,9 @@
+github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/julienschmidt/httprouter v1.2.0 h1:TDTW5Yz1mjftljbcKqRcrYhd4XeOoI98t+9HbQbYf7g=
 github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7VTCxuUUipMqKk8s4w=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/qingcloudhx/core v0.9.3-0.20190625065757-9a4c5da90847 h1:xFtNNLOIV56sPpnouYYf1Vtc3OHQ9TTZkCEdLsQTdpg=
 github.com/qingcloudhx/core v0.9.3-0.20190625065757-9a4c5da90847/go.mod h1:9KromA2Qu+bJOLVqqlaCXT5Q5xpDVkDHV4hBdRNYEqM=
@@ -9,7 +11,10 @@ github.com/qingcloudhx/flow v0.9.3-0.20190625091956-058feb41fac5 h1:JuPE7ubJOlMq
 github.com/qingcloudhx/flow v0.9.3-0.20190625091956-058feb41fac5/go.mod h1:lHKXu+VyLFKcxBIe5dMvp02fa5B7qFe66hmVEHu6C2o=
 github.com/qingcloudhx/flow v0.9.3-0.20190625092635-a60b003726ed h1:7jyG7G9ZNcWJQ5MYCnm39toavG2x0dgk+74HWDhMzbY=
 github.com/qingcloudhx/flow v0.9.3-0.20190625092635-a60b003726ed/go.mod h1:EmDeMmxXnv3XsRVG2s5C+W9h2hrKrZzuPPTzNlmx/zo=
+github.com/qingcloudhx/flow v0.9.3-0.20190625092809-babed57e35a9 h1:0HOJX1Bu54DIa6CrG2911vBdAessUVCN5YcNJTaxYAQ=
+github.com/qingcloudhx/flow v0.9.3-0.20190625092809-babed57e35a9/go.mod h1:EmDeMmxXnv3XsRVG2s5C+W9h2hrKrZzuPPTzNlmx/zo=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
+github.com/stretchr/testify v1.3.0 h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0Q=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f/go.mod h1:N2zxlSyiKSe5eX1tZViRH5QA0qijqEDrYZiPEAiq3wU=
 github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415/go.mod h1:GwrjFmJcFw6At/Gs6z4yjiIwzuJ1/+UwLxMQDVQXShQ=
