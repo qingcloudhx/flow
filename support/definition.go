@@ -8,7 +8,7 @@ import (
 
 // todo fix this
 var flowManager *FlowManager
-var resManager *resource.Manager
+var resManager *resource.Manager //config resources
 
 func InitDefaultDefLookup(fManager *FlowManager, rManager *resource.Manager) {
 	flowManager = fManager

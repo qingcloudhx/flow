@@ -53,12 +53,13 @@ func NewIndependentInstance(instanceID string, flowURI string, flow *definition.
 	inst.taskInsts = make(map[string]*TaskInst)
 	inst.linkInsts = make(map[int]*LinkInst)
 
+	logger.Infof("[flow] NewIndependentInstance flowDef:%+v", flow)
 	return inst, nil
 }
 
 func (inst *IndependentInstance) newEmbeddedInstance(taskInst *TaskInst, flowURI string, flow *definition.Definition) *Instance {
-	loggger := inst.logger
-	loggger.Infof("[flow] newEmbeddedInstance subFlowCtr:%d,flowURI:%s", inst.subFlowCtr, flowURI)
+	logger := inst.logger
+	logger.Infof("[flow] newEmbeddedInstance subFlowCtr:%d,flowURI:%s", inst.subFlowCtr, flowURI)
 	inst.subFlowCtr++
 
 	embeddedInst := &Instance{}
@@ -478,7 +479,8 @@ func (inst *IndependentInstance) startInstance(toStart *Instance) bool {
 }
 
 func (inst *IndependentInstance) enterTasks(activeInst *Instance, taskEntries []*model.TaskEntry) error {
-
+	logger := inst.logger
+	logger.Infof("[flow] enterTasks taskEntries:%+v", taskEntries)
 	for _, taskEntry := range taskEntries {
 
 		//logger.Debugf("EnterTask - TaskEntry: %v", taskEntry)
@@ -501,6 +503,42 @@ func (inst *IndependentInstance) enterTasks(activeInst *Instance, taskEntries []
 	}
 
 	return nil
+}
+
+//// Restart indicates that this FlowInstance was restarted
+func (inst *IndependentInstance) Restart(id string, manager *flowsupport.FlowManager) error {
+	inst.id = id
+	var err error
+	inst.flowDef, err = manager.GetFlow(inst.flowURI)
+
+	if err != nil {
+		return err
+	}
+	if inst.flowDef == nil {
+		return errors.New("unable to resolve flow: " + inst.flowURI)
+	}
+
+	inst.flowModel, err = getFlowModel(inst.flowDef)
+	if err != nil {
+		return err
+	}
+	inst.master = inst
+	inst.init(inst.Instance)
+
+	return nil
+}
+
+func (inst *IndependentInstance) init(flowInst *Instance) {
+
+	for _, v := range flowInst.taskInsts {
+		v.flowInst = flowInst
+		v.task = flowInst.flowDef.GetTask(v.taskID)
+	}
+
+	for _, v := range flowInst.linkInsts {
+		v.flowInst = flowInst
+		v.link = flowInst.flowDef.GetLink(v.linkID)
+	}
 }
 
 //////////////////////////////////////////////////////////////////
@@ -559,40 +597,4 @@ func getFlowModel(flow *definition.Definition) (*model.FlowModel, error) {
 	return model.Get(flow.ModelID())
 	//todo if model not found, should throw error
 
-}
-
-//// Restart indicates that this FlowInstance was restarted
-func (inst *IndependentInstance) Restart(id string, manager *flowsupport.FlowManager) error {
-	inst.id = id
-	var err error
-	inst.flowDef, err = manager.GetFlow(inst.flowURI)
-
-	if err != nil {
-		return err
-	}
-	if inst.flowDef == nil {
-		return errors.New("unable to resolve flow: " + inst.flowURI)
-	}
-
-	inst.flowModel, err = getFlowModel(inst.flowDef)
-	if err != nil {
-		return err
-	}
-	inst.master = inst
-	inst.init(inst.Instance)
-
-	return nil
-}
-
-func (inst *IndependentInstance) init(flowInst *Instance) {
-
-	for _, v := range flowInst.taskInsts {
-		v.flowInst = flowInst
-		v.task = flowInst.flowDef.GetTask(v.taskID)
-	}
-
-	for _, v := range flowInst.linkInsts {
-		v.flowInst = flowInst
-		v.link = flowInst.flowDef.GetLink(v.linkID)
-	}
 }
