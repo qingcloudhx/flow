@@ -8,8 +8,12 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/qingcloudhx/core v0.9.3-0.20190625065757-9a4c5da90847 h1:xFtNNLOIV56sPpnouYYf1Vtc3OHQ9TTZkCEdLsQTdpg=
 github.com/qingcloudhx/core v0.9.3-0.20190625065757-9a4c5da90847/go.mod h1:9KromA2Qu+bJOLVqqlaCXT5Q5xpDVkDHV4hBdRNYEqM=
-github.com/qingcloudhx/flow v0.9.3-0.20190625092809-babed57e35a9 h1:0HOJX1Bu54DIa6CrG2911vBdAessUVCN5YcNJTaxYAQ=
-github.com/qingcloudhx/flow v0.9.3-0.20190625092809-babed57e35a9/go.mod h1:EmDeMmxXnv3XsRVG2s5C+W9h2hrKrZzuPPTzNlmx/zo=
+github.com/qingcloudhx/core v1.0.2 h1:na/FEIaj/3YGbUJ9v27ZEP9lEhxthOHa6dTSQVsRoPQ=
+github.com/qingcloudhx/core v1.0.2/go.mod h1:XozOfKsFqepzgpN7Z0Wy4WSRgd64/aJDoRcccoxE0t0=
+github.com/qingcloudhx/flow v1.0.0 h1:wNVQ7DM16AIO8CrVEK+xkUxQLnbwssKf8NFUdBIQ7pY=
+github.com/qingcloudhx/flow v1.0.0/go.mod h1:EmDeMmxXnv3XsRVG2s5C+W9h2hrKrZzuPPTzNlmx/zo=
+github.com/qingcloudhx/flow-plugin/activity/log v0.0.0-20190625104814-259c6d75af9e/go.mod h1:Lwynx7TSJS2lVg0RM8mrCADb7Sxr2cO4AIwK2t11Pl8=
+github.com/qingcloudhx/flow-plugin/trigger/rest v0.0.0-20190625104814-259c6d75af9e/go.mod h1:OMs4msTLOzCRPdVk442hKXzTRRBgjXORS+6FCN9pmXY=
 github.com/stretchr/objx v0.1.0 h1:4G4v2dO3VZwixGIRoQ5Lfboy6nUhCyYzaqnIAPPhYs4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0 h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0Q=
