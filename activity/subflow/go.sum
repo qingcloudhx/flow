@@ -11,6 +11,8 @@ github.com/qingcloudhx/core v1.0.2 h1:na/FEIaj/3YGbUJ9v27ZEP9lEhxthOHa6dTSQVsRoP
 github.com/qingcloudhx/core v1.0.2/go.mod h1:XozOfKsFqepzgpN7Z0Wy4WSRgd64/aJDoRcccoxE0t0=
 github.com/qingcloudhx/flow v1.0.0 h1:wNVQ7DM16AIO8CrVEK+xkUxQLnbwssKf8NFUdBIQ7pY=
 github.com/qingcloudhx/flow v1.0.0/go.mod h1:EmDeMmxXnv3XsRVG2s5C+W9h2hrKrZzuPPTzNlmx/zo=
+github.com/qingcloudhx/flow v1.0.1 h1:o3op47kIp5OssCglvUp0JgG48vmGnBk65a4Ro8MaqUc=
+github.com/qingcloudhx/flow v1.0.1/go.mod h1:EmDeMmxXnv3XsRVG2s5C+W9h2hrKrZzuPPTzNlmx/zo=
 github.com/qingcloudhx/flow-plugin/activity/log v0.0.0-20190625104814-259c6d75af9e/go.mod h1:Lwynx7TSJS2lVg0RM8mrCADb7Sxr2cO4AIwK2t11Pl8=
 github.com/qingcloudhx/flow-plugin/trigger/rest v0.0.0-20190625104814-259c6d75af9e/go.mod h1:OMs4msTLOzCRPdVk442hKXzTRRBgjXORS+6FCN9pmXY=
 github.com/stretchr/objx v0.1.0 h1:4G4v2dO3VZwixGIRoQ5Lfboy6nUhCyYzaqnIAPPhYs4=
