@@ -6,6 +6,7 @@ import (
 	"errors"
 	"os"
 	"strconv"
+	"time"
 
 	"github.com/qingcloudhx/core/action"
 	"github.com/qingcloudhx/core/data"
@@ -133,6 +134,7 @@ func (f *ActionFactory) New(config *action.Config) (action.Action, error) {
 // Run implements action.Action.Run
 func (fa *FlowAction) Run(ctx context.Context, inputs map[string]interface{}, handler action.ResultHandler) error {
 
+	start := time.Now()
 	logger.Info("Running OnDemand Flow Action")
 
 	fpAttr, exists := inputs[ivFlowPackage]
@@ -218,9 +220,9 @@ func (fa *FlowAction) Run(ctx context.Context, inputs map[string]interface{}, ha
 		logger.Debugf("Done Executing flow instance [%s] - Status: %d", inst.ID(), inst.Status())
 
 		if inst.Status() == model.FlowStatusCompleted {
-			logger.Infof("Flow instance [%s] Completed Successfully", inst.ID())
+			logger.Infof("Flow instance [%s] Completed Successfully,lost:%d", inst.ID(), time.Since(start))
 		} else if inst.Status() == model.FlowStatusFailed {
-			logger.Infof("Flow instance [%s] Failed", inst.ID())
+			logger.Infof("Flow instance [%s] Failed,lost:%d", inst.ID(), time.Since(start))
 		}
 	}()
 
