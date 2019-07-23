@@ -307,9 +307,9 @@ func (fa *FlowAction) Run(context context.Context, inputs map[string]interface{}
 		logger.Debugf("Done Executing flow instance [%s] - Status: %d", inst.ID(), inst.Status())
 
 		if inst.Status() == model.FlowStatusCompleted {
-			logger.Infof("Instance [%s] [%d] Done", inst.ID(), time.Since(start)/1e6)
+			logger.Infof("Instance [%s] [%d] Done", inst.ID(), time.Since(start))
 		} else if inst.Status() == model.FlowStatusFailed {
-			logger.Infof("Instance [%s] [%d] Failed", inst.ID(), time.Since(start)/1e6)
+			logger.Infof("Instance [%s] [%d] Failed", inst.ID(), time.Since(start))
 		}
 	}()
 
